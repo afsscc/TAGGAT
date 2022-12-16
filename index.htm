@@ -1,0 +1,163 @@
+<!--
+  Web Design II
+  Projeto
+  HTML
+  António Castro, nº 201206754
+  Beatriz Teixeira, nº 201905983
+  Bruno Barros, nº 201909069
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAGGAT / Arquivo Gráfico</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://jsuites.net/v4/jsuites.css"
+      type="text/css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container-child entry">
+        <h1 id="tag"><em>T</em>AGGA<em>T</em></h1>
+        <p>
+          Uma <em>timeline</em> interativa para consultar a História da
+          Tipografia em Portugal
+        </p>
+        <div id="baixo">
+          <a href="#first"><img src="img/downarrow.svg" alt="arrow down" /></a>
+        </div>
+      </div>
+      <!-- (first) PÁGINA TIMELINE -->
+      <div class="container-child headerfooter" id="first">
+        <!-- MENU TAGGAT TIMELINE -->
+        <header>
+          <ul class="headerlist-left">
+            <li id="logotaggat"><em>T</em>AGGA<em>T</em></li>
+          </ul>
+          <ul class="headerlist-right">
+            <li class="bordered2"><a href="#second">Arquivo</a></li>
+            <li class="bordered2"><a href="#third">Sobre</a></li>
+          </ul>
+        </header>
+        <!-- PRIMEIROS ARTIGOS TIMELINE -->
+        <div class="first">
+          <div class="firstupper">
+            <div class="firstarticle left"></div>
+            <div class="firstarticle right"></div>
+          </div>
+          <!-- SECÇÃO TIMELINE -->
+          <div class="timeline">
+            <div class="box_1 box">
+              <div class="close closeinactive">&lt;</div>
+              <h2 class="ano_display">1700</h2>
+              <div class="ano_column decada1700"></div>
+            </div>
+            <!--box-->
+            <div class="box_2 box">
+              <div class="close closeinactive">&lt;</div>
+              <h2 class="ano_display">1800</h2>
+              <div class="ano_column decada1800"></div>
+            </div>
+            <!--box-->
+            <div class="box_3 box">
+              <div class="close closeinactive">&lt;</div>
+              <h2 class="ano_display">1900</h2>
+              <div class="ano_column decada1900"></div>
+            </div>
+            <!--box-->
+            <div class="box_4 box">
+              <div class="close closeinactive">&lt;</div>
+              <h2 class="ano_display">2000</h2>
+              <div class="ano_column decada2000"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (second) PÁGINA ARQUIVO -->
+      <div class="container-child" id="second">
+        <!-- MENU CATEGORIAS -->
+        <footer>
+          <ul class="footerlist-left">
+            <li class="logonit"><a href="https://nit.fba.up.pt/">NIT</a></li>
+            <li class="bordered2"><a href="#first">Timeline</a></li>
+          </ul>
+          <ul class="footerlist-right">
+            <li class="btn1 bordered inactive">Locais</li>
+            <li class="btn2 bordered inactive">Pessoas</li>
+            <li class="btn3 bordered inactive">Artefactos</li>
+          </ul>
+        </footer>
+
+        <!-- LISTA ARQUIVO -->
+        <div class="columns">
+          <div class="nav"></div>
+          <div class="feedarticle"></div>
+        </div>
+
+        <!-- (third) PÁGINA SOBRE -->
+        <div class="gotop">
+          <div class="container-child about" id="third">
+            <div class="sob">
+              <div class="sobre um">
+                <h2 class="logonit">NIT</h2>
+                <p>
+                  O Núcleo de Investigação Tipográfica (NIT), Typographic
+                  Research Network, é um grupo multidisciplinar focado na
+                  Investigação inovativa e educação da Tipografia e Artes
+                  Gráficas (TAG) em Portugal e países Lusófonos, Latinos,
+                  Hispânicos e Ibero-Americanos.
+                </p>
+              </div>
+
+              <div class="sobre dois">
+                <h2 id="logotaggat2"><em>T</em>AGGA<em>T</em></h2>
+                <p>
+                  TAGGAT é uma timeline interativa que permite navegar pela
+                  história da tipografia em Portugal. Este arquivo surge pela
+                  falta de uma única plataforma que reunisse conteúdos sobre
+                  tipografia no contexto Português.
+                </p>
+              </div>
+            </div>
+
+            <div class="final">
+              <ul class="finallist">
+                <li>
+                  <a href="https://idmais.org/"
+                    ><img src="img/logoidmais.png" alt="logo ID+"
+                  /></a>
+                </li>
+                <li id="up">
+                  <a href="https://sigarra.up.pt/fbaup/pt/WEB_PAGE.INICIAL">
+                    <img src="img/logouporto.png" alt="logo UPORTO"
+                  /></a>
+                </li>
+                <li id="nit">
+                  <a href="https://nit.fba.up.pt/"
+                    ><img src="img/logonit.png" alt="logo NIT"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="final_creditos">
+              <p>
+                2022 TAGGAT © António Castro, Beatriz Teixeira & Bruno Barros
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
